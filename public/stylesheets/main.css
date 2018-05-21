@@ -1,0 +1,70 @@
+/* body {
+  margin: 0;
+  padding: 0;
+  color: black;
+} */
+
+#nav {
+  background-color: white;
+}
+
+.jumbotron {
+  background-color: #0d47a1;
+  color: white;
+  height: 100vh; 
+}
+
+.display-2 {
+  font-weight: bold;
+}
+
+.trans-grow{
+  transition: width 1s  ease-out;
+  width : 0%;
+  background: white;
+}
+
+.grow{
+  width:100%;
+}
+
+#email {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover{
+  border-bottom: 1px white solid;
+}
+
+code {
+  font-size: 20px;
+}
+
+.motto-text {
+  color: white;
+}
+
+.motto {
+  color: rgb(226, 226, 122);
+}
+
+.head-title {
+  font-size: 2rem;
+  color: #0d47a1;
+}
+
+.head-subtitle {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.timeline {
+  font-size: 1rem;
+  text-align: bottom;
+}
+
+.fab {
+  color: #0d47a1;
+  margin-right: 20px;
+}
