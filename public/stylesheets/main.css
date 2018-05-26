@@ -1,5 +1,5 @@
 body {
-background-color: #FAFAFA;
+background-color: lightgray;
 }
 
 #nav {
@@ -8,7 +8,6 @@ background-color: #FAFAFA;
 }
 
 #icon:hover {
-  
   padding-bottom: 5px;
   border-bottom: 2px black solid;
 }
