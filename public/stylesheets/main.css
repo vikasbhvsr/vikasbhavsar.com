@@ -1,5 +1,5 @@
 body {
-background-color: lightgray;
+background-color: white;
 }
 .nav {
   background-color: white;
@@ -57,16 +57,26 @@ code {
   background-color: #0d47a1;
   color: white;
 }
-#return-to-top {
+.top {
   position: fixed;
   bottom: 85px;
   right: 35px;
   width: 35px;
   height: 35px;
 }
-#return-to-top i {
+.top i {
   color: #0d47a1;
 }
 .asser {
   color: darkred;
 }
+
+.lead{
+  letter-spacing: 0.1em;
+}
+/* 
+@media(max-width: 500px){
+  .display-2 {
+    font-size: 4rem;
+  }
+} */

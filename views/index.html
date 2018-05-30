@@ -32,11 +32,11 @@
     </li>
   </ul>
 
-
   <div class="jumbotron jumbotron-fluid d-flex align-items-center">
     <div class="container text-center">
-      <h1 class="display-2 animated pulse">Vikas Bhavsar</h1>
-      <p class="display-5">Web Developer / Front-End Developer
+      <h1 class="display-2 animated pulse">
+        Vikas Bhavsar</h1>
+      <p class="display-5"><i class="fas fa-code"></i> Web Developer / Front-End Developer
         <p class="display-5">
           <a href="mailto:vikasbhvsr@gmail.com" id="email">
             <i class="fas fa-envelope"></i> vikasbhvsr@gmail.com</a>
@@ -51,7 +51,7 @@
       <code><kbd>var</kbd><span class="motto"> motto </span>= <span class="motto-text">"creating and innovating is my passion";</span></code>
       <br>
       <br>
-      <a class="btn btn-outline-danger" href="#contact">Contact Me</a>
+      <a class="btn btn-outline-danger" id="work" href="#contact">Contact Me</a>
     </div>
   </div>
 
@@ -135,7 +135,7 @@
 
   <div class="container">
     <p class="lead font-weight-bold">
-      <a name="contact">Contact</a>
+      <a id="contact">Contact</a>
     </p>
     <form action="submit" method="POST">
       <div class="form-group row">
@@ -170,16 +170,19 @@
           <textarea name="message" class="form-control" rows="3" required></textarea>
         </div>
       </div>
-      <button class="btn btn-outline-danger btn-lg float-right" type="submit">Submit</button>
+      <div class="float-right">
+        <button class="btn btn-outline-primary" type="reset">Reset</button>
+        <button class="btn btn-outline-danger" type="submit">Submit</button>
+      </div>
     </form>
   </div>
-
   <br>
   <br>
-  <br>
-  <a href="" id="return-to-top">
-    <i class="fas fa-2x fa-chevron-circle-up"></i>
-  </a>
+  <div class="top">
+    <a href="javascript:void(0)">
+      <i class="fas fa-2x fa-chevron-circle-up"></i>
+    </a>
+  </div>
   <footer class="footer">
     <div class="container">
       <div class="text-center py-3">
@@ -190,7 +193,7 @@
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
@@ -201,25 +204,39 @@
 </body>
 
 <script>
+
   // hr tag animation
   setTimeout(function () {
     $('.trans-grow').addClass('grow');
   }, 275);
 
+  // Smooth Scroll Return To top
 
-  // ===== Scroll to Top ==== 
-  $(window).scroll(function () {
-    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
-      $('#return-to-top').fadeIn(200);    // Fade in the arrow
+  $(window).bind("scroll", function () {
+    if ($(this).scrollTop() > 100) {
+      $(".top").fadeIn(400);
     } else {
-      $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+      $('.top').fadeOut(400);
     }
   });
-  $('#return-to-top').click(function () {      // When arrow is clicked
-    $('body,html').animate({
-      scrollTop: 0                       // Scroll to top of body
-    }, 500);
+  $('.top').click(function () {
+    $('html, body').animate({ scrollTop: '0px' }, 800);
   });
+
+
+  // Smooth Scroll to Contact Me
+
+  $('#work').click(function () {
+    const contact = $('#contact').position().top;
+
+    $('html, body').animate(
+      {
+        scrollTop: contact
+      },
+      800
+    );
+  });
+
 </script>
 
 </html>
