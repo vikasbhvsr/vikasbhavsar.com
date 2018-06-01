@@ -2,6 +2,17 @@
 <html lang="en">
 
 <head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120213895-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-120213895-1');
+  </script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Bootstrap CSS -->
@@ -205,39 +216,34 @@
 </body>
 
 <script>
+  // hr tag animation
+  setTimeout(function () {
+    $('.trans-grow').addClass('grow');
+  }, 275);
 
-  $(function () {
+  // Smooth Scroll Return To top
 
-    // hr tag animation
-    setTimeout(function () {
-      $('.trans-grow').addClass('grow');
-    }, 275);
+  $(window).bind("scroll", function () {
+    if ($(this).scrollTop() > 100) {
+      $(".top").fadeIn(400);
+    } else {
+      $('.top').fadeOut(400);
+    }
+  });
+  $('.top').click(function () {
+    $('html, body').animate({ scrollTop: '0px' }, 800);
+  });
 
-    // Smooth Scroll Return To top
 
-    $(window).bind("scroll", function () {
-      if ($(this).scrollTop() > 100) {
-        $(".top").fadeIn(400);
-      } else {
-        $('.top').fadeOut(400);
-      }
-    });
-    $('.top').click(function () {
-      $('html, body').animate({ scrollTop: '0px' }, 800);
-    });
+  // Smooth Scroll to Contact Me
 
-    // Smooth Scroll to Contact Me
-
-    $('#work').click(function () {
-      const contact = $('#contact').position().top;
-
-      $('html, body').animate(
-        {
-          scrollTop: contact
-        },
-        800
-      );
-    });
+  $('#work').click(function () {
+    const contact = $('#contact').position().top;
+    $('html, body').animate({
+      scrollTop: contact
+    },
+      800
+    );
   });
 </script>
 
