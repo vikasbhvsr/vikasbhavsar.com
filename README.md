@@ -1,2 +1,2 @@
-# vikasbhavsar.com
-my own site
+# www.vikasbhavsar.com
+My Own Site
