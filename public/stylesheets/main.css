@@ -3,18 +3,17 @@ background-color: white;
 }
 .nav {
   background-color: white;
-  border-bottom: 1px #0d47a1 solid;
+  border-bottom: 2px #0d47a1 solid;
 }
 .nav-link :hover {
   border-bottom: 2px black solid;
 }
 .jumbotron {
-  padding-top: 70px;
   background-color: #0d47a1;
   color: white;
   height: 100vh;
-}
-.display-2 {
+  }
+.jumbotron .display-2 {
   font-weight: bold;
 }
 .trans-grow{
