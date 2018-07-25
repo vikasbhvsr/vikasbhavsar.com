@@ -2,22 +2,25 @@
 <html lang="en">
 
 <head>
-
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120213895-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'UA-120213895-1');
   </script>
-
   <meta charset="utf-8">
+  <meta name="description" content="Highly experienced Web Developer.">
+  <meta name="keywords" content="HTML,HTML5,CSS,Bootstrap,JavaScript,Java,jQuery,GitHub,LinkedIn,Developer,Front-End,Full-Stack,">
+  <meta name="author" content="Vikas Bhavsar">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
     crossorigin="anonymous">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
   <!-- Font Awesome CSS-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
     crossorigin="anonymous">
@@ -25,14 +28,16 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <!-- Custom CSS -->
   <link rel="stylesheet" type="text/css" href="./stylesheets/main.css">
-
+  <!-- Custom Script -->
+  <script src="/public/javascripts/script.js"></script>
+  <!-- Title -->
   <title>Vikas Bhavsar - Web Developer</title>
 </head>
 
-<body>
+<body id="top">
   <ul class="nav justify-content-center fixed-top">
     <li class="nav-item">
-      <a class="nav-link" href="https://www.linkedin.com/in/vikas-bhavsar-71184a13a" target="_blank">
+      <a class="nav-link" href="https://www.linkedin.com/in/vikasbhvsr" target="_blank">
         <i class="fab fa-2x fa-linkedin"></i>
       </a>
     </li>
@@ -46,19 +51,21 @@
   <div class="jumbotron jumbotron-fluid d-flex align-items-center">
     <div class="container text-center">
       <h1 class="display-2 animated pulse">
-        Vikas Bhavsar</h1>
+        Vikas Bhavsar
+      </h1>
       <p class="display-5">
         <i class="fas fa-code"></i> Web Developer / Front-End Developer
-        <p class="display-5">
-          <a href="mailto:vikasbhvsr@gmail.com" id="email">
-            <i class="fas fa-envelope"></i> vikasbhvsr@gmail.com</a>
-        </p>
-        <p class="display-5">
-          <i class="fas fa-phone fa-rotate-90"></i> (805) 758-4019</p>
       </p>
-      <a class="btn btn-outline-warning" href="./files/vikas_cv_5192018.pdf" target="_blank" role="button">Download CV</a>
+      <p class="display-5">
+        <a href="mailto:vikasbhvsr@gmail.com" id="email">
+          <i class="fas fa-envelope"></i> vikasbhvsr@gmail.com</a>
+      </p>
+      <p class="display-5">
+        <i class="fas fa-phone fa-rotate-90"></i> (805) 758-4019
+      </p>
+      <a class="btn btn-outline-warning" href="./files/vikas_cv_07242018.pdf" target="_blank" role="button">Download CV</a>
 
-      <hr class="trans-grow my-4">
+      <hr class="animated zoomIn">
       <p>I am a Web Developer / Front-End Developer. I believe in simple design.</p>
       <code><kbd>var</kbd><span class="motto"> motto </span>= <span class="motto-text">"creating and innovating is my passion";</span></code>
       <br>
@@ -93,7 +100,7 @@
     </div>
   </div>
 
-  <hr class="trans-grow my-4">
+  <hr class="animated zoomIn line">
 
   <div class="container">
     <p class="lead font-weight-bold">Experience</p>
@@ -124,7 +131,7 @@
     </div>
   </div>
 
-  <hr class="trans-grow my-4">
+  <hr class="animated zoomIn line">
 
   <div class="container">
     <p class="lead font-weight-bold">Skills</p>
@@ -143,36 +150,41 @@
     </div>
   </div>
 
-  <hr class="trans-grow my-4">
+  <hr class="animated zoomIn line">
 
-  <div class="container">
+  <div class="container" data-aos="slide-right">
+
     <p class="lead font-weight-bold">
       <a id="contact">Contact</a>
     </p>
-    <form action="submit" method="POST">
+    <form action="mailto:vikasbhvsr@gmail.com" method="POST">
       <div class="form-group row">
-        <label for="company" class="col-sm-3 col-form-label">Company Name<span class="asser">*</span>
+        <label for="company" class="col-sm-3 col-form-label">Company Name
+          <span class="star">*</span>
         </label>
         <div class="col-sm-9">
-          <input name="company" type="text" class="form-control" placeholder="ABC Inc." required>
+          <input name="company-name" type="text" class="form-control" placeholder="ABC Inc." required>
         </div>
       </div>
       <div class="form-group row">
-        <label for="name" class="col-sm-3 col-form-label">Your Name<span class="asser">*</span>
+        <label for="name" class="col-sm-3 col-form-label">Your Name
+          <span class="star">*</span>
         </label>
         <div class="col-sm-9">
           <input name="name" type="text" class="form-control" placeholder="John Doe" required>
         </div>
       </div>
       <div class="form-group row">
-        <label for="email" class="col-sm-3 col-form-label">Email<span class="asser">*</span>
+        <label for="email" class="col-sm-3 col-form-label">Email
+          <span class="star">*</span>
         </label>
         <div class="col-sm-9">
           <input name="email" type="email" class="form-control" placeholder="john@doe.com" required>
         </div>
       </div>
       <div class="form-group row">
-        <label for="describe" class="col-sm-3 col-form-label">Please describe your requirements<span class="asser">*</span>
+        <label for="describe" class="col-sm-3 col-form-label">Please describe your requirements
+          <span class="star">*</span>
         </label>
         <div class="col-sm-9">
           <textarea name="message" class="form-control" placeholder="Please leave a detailed message..." rows="8" required></textarea>
@@ -186,61 +198,44 @@
   </div>
   <br>
   <br>
-  <div class="top">
-    <a href="javascript:void(0)">
+  <div class="back-to-top">
+    <a href="#top">
       <i class="fas fa-2x fa-chevron-circle-up"></i>
+      <br>
     </a>
   </div>
+
   <footer class="footer">
     <div class="container">
       <div class="text-center py-3">
-        &copy 2018 Vikas Bhavsar
+        &copy; 2018 Vikas Bhavsar
       </div>
     </div>
   </footer>
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-    crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
 </body>
-
 <script>
-  // hr tag animation
-  setTimeout(function () {
-    $('.trans-grow').addClass('grow');
-  }, 275);
-
   // Smooth Scroll Return To top
-
   $(window).bind("scroll", function () {
     if ($(this).scrollTop() > 100) {
-      $(".top").fadeIn(400);
+      $(".back-to-top").fadeIn(400);
     } else {
-      $('.top').fadeOut(400);
+      $('.back-to-top').fadeOut(400);
     }
   });
-  $('.top').click(function () {
-    $('html, body').animate({ scrollTop: '0px' }, 800);
+  $('.back-to-top').click(function () {
+    $('html, body').animate({ scrollTop: '0px' }, 1000);
   });
 
-
   // Smooth Scroll to Contact Me
-
   $('#work').click(function () {
     const contact = $('#contact').position().top;
     $('html, body').animate({
       scrollTop: contact
     },
-      800
+      1000
     );
   });
+
 </script>
 
 </html>
