@@ -8,24 +8,30 @@
 
 /* ##### HTML RESET END ##### */
 
-
 /* ##### ANIMATE ON SCROLL START ##### */
 
 .hidden {
   opacity: 0;
 }
+
 @keyframes fade-in {
-  from {opacity: 0; transform: scale(.8,.8)}
-  to {opacity: 1;}
+  from {
+    opacity: 0;
+    transform: scale(.8, .8)
+  }
+  to {
+    opacity: 1;
+  }
 }
+
 .fade-in-element {
-animation: fade-in 1.0s;
+  animation: fade-in 1.0s;
 }
 
 /* ##### ANIMATE ON SCROLL END ##### */
 
-
 /* ##### NAVBAR START ##### */
+
 .navbar {
   display: flex;
   flex-direction: column;
@@ -39,12 +45,14 @@ animation: fade-in 1.0s;
   position: fixed;
   overflow: hidden;
 }
+
 .round-img {
   border: 0.5rem rgba(255, 255, 255, 0.2) solid;
   border-radius: 50%;
   width: 11rem;
   height: 11rem;
 }
+
 .nav-links {
   padding: 0;
   margin: 0;
@@ -52,7 +60,8 @@ animation: fade-in 1.0s;
   letter-spacing: 0.2rem;
   font-size: 0.8rem;
 }
-.nav-links li{
+
+.nav-links li {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -61,18 +70,20 @@ animation: fade-in 1.0s;
   list-style: none;
   padding: 1rem 0;
 }
+
 .nav-links li a {
   text-decoration: none;
   color: white;
 }
+
 .nav-links li a:hover {
   color: darkgray;
   transition: all 0.3s ease-in;
 }
+
 .navbar .nav-links .active {
   color: darkgray;
   transition: all 0.3s ease-in;
-
 }
 
 /* ##### NAVBAR END ##### */
@@ -100,34 +111,41 @@ section {
   padding: 0 3rem;
   height: 100vh;
 }
+
 .heading {
   font-size: 5rem;
   text-transform: uppercase;
   padding: 0;
   margin: 0;
 }
+
 .blue-color {
   color: #3F51B5;
 }
+
 .sub-heading {
   font-size: 1.2rem;
   text-transform: uppercase;
   padding: 0;
   margin: 0;
 }
+
 .sub-heading a {
   text-decoration: none;
   color: white;
 }
+
 .main p {
   margin: 3rem 0;
 }
+
 .main .social a {
   margin-right: 1rem;
   font-size: 2rem;
   color: white;
 }
-.main .social a:hover{
+
+.main .social a:hover {
   text-decoration: none;
   color: #3F51B5;
   transition: 0.3s ease-in;
@@ -143,6 +161,7 @@ section {
   margin-bottom: 3rem;
   color: #3F51B5;
 }
+
 .sub-title {
   font-size: 1rem;
   text-transform: uppercase;
@@ -150,6 +169,7 @@ section {
   margin-bottom: 1rem;
   color: darkgray;
 }
+
 .experience {
   display: flex;
   flex-direction: column;
@@ -171,6 +191,7 @@ section {
   height: 100vh;
   background-color: #E65100;
 }
+
 .head-subtitle {
   font-style: italic;
 }
@@ -187,21 +208,23 @@ section {
   height: 100vh;
   background-color: #880e4f;
 }
+
 .skills .icons-list {
   padding: 0;
-  
 }
+
 .skills .icons-list li {
   list-style: none;
   display: inline;
   font-size: 2rem;
   margin-right: 1rem;
-
 }
+
 .skills .icons-list li:hover {
   color: #3F51B5;
   transition: 0.3s ease-in;
 }
+
 .skills .workflow {
   list-style: none;
   padding: 0;
@@ -239,16 +262,20 @@ section {
 
 /* ##### CONTACT PAGE END ##### */
 
+.alert {
+  text-align: center;
+  background: green;
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   .navbar {
     display: none;
   }
-
   section {
     width: 100vw;
     padding: 2rem 2rem !important;
   }
-
   .main {
     height: auto;
     text-align: center;
@@ -284,70 +311,11 @@ section {
   }
   .skills .icons-list li {
     margin-right: 1.5rem;
-  
   }
   .interests {
     height: auto;
   }
   .contact {
-    height:auto;
+    height: auto;
   }
-  /* .menu-btn {
-    position: fixed;
-    z-index: 3;
-    right: 25px;
-    top: 25px;
-    cursor: pointer;
-    transition: all 0.5s ease-out;
-  }
-  .menu-btn .btn-line {
-    width: 28px;
-    height: 3px;
-    margin: 0 0 5px 0;
-    background: #fff;
-    transition: all 0.5s ease-out; 
-  }
-  .menu-btn.close {
-    transform: rotate(180deg); 
-  }
-  .menu-btn.close .btn-line:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px); 
-  }
-  .menu-btn.close .btn-line:nth-child(2) {
-    opacity: 0;
-  }
-  .menu-btn.close .btn-line:nth-child(3) {
-    transform: rotate(-45deg) translate(7px, -6px);
-  }
-  .show {
-    background: white;
-  }
-  section {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    text-align: center;
-  }
-  .main .social i {
-    margin-right: 0.5rem;
-    font-size: 2rem;
-  }
-  .main .heading h1 {
-    font-size: 3.5rem;
-  }
-  .main .sub-heading h4 {
-    font-size: 0.9rem;
-  }
-  .title {
-    margin: 2rem 0;
-    font-size: 2rem;
-  } */
-
-
-  
 }
-
-
-
-
-

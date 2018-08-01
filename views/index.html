@@ -6,7 +6,10 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120213895-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
     gtag('config', 'UA-120213895-1');
   </script>
@@ -225,13 +228,15 @@
   <section id="contact" class="contact">
     <div class="hidden">
       <h1 class="title">Contact</h1>
-      <form action="mailto:vikasbhvsr@gmail.com" method="POST">
+      <form id="contactForm">
+        <div class="alert">Your message has been sent.</div>
         <div class="form-group row">
           <label for="company" class="col-sm-3 col-form-label">Company Name
             <span class="star">*</span>
           </label>
           <div class="col-sm-9">
-            <input name="company-name" type="text" class="form-control" placeholder="ABC Inc." autocomplete="organization" required>
+            <input name="company-name" type="text" class="form-control" placeholder="ABC Inc." autocomplete="organization" id="company"
+              required>
           </div>
         </div>
         <div class="form-group row">
@@ -239,7 +244,7 @@
             <span class="star">*</span>
           </label>
           <div class="col-sm-9">
-            <input name="name" type="text" class="form-control" placeholder="John Doe" autocomplete="organization" required>
+            <input name="name" type="text" class="form-control" placeholder="John Doe" autocomplete="organization" id="name" required>
           </div>
         </div>
         <div class="form-group row">
@@ -247,7 +252,7 @@
             <span class="star">*</span>
           </label>
           <div class="col-sm-9">
-            <input name="email" type="email" class="form-control" placeholder="john@doe.com" autocomplete="organization" required>
+            <input name="email" type="email" class="form-control" placeholder="john@doe.com" autocomplete="organization" id="email" required>
           </div>
         </div>
         <div class="form-group row">
@@ -256,7 +261,7 @@
           </label>
           <div class="col-sm-9">
             <textarea name="message" class="form-control" placeholder="Please leave a detailed message..." rows="8" autocomplete="organization"
-              required></textarea>
+              id="message" required></textarea>
           </div>
         </div>
         <div class="float-right">
@@ -293,6 +298,8 @@
       };
     })();
   </script>
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
   <!-- Custom JS -->
   <script src="/javascripts/script.js"></script>
   <!-- jQuery -->
