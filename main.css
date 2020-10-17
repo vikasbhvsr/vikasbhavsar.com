@@ -56,3 +56,13 @@ main a:hover {
   width: 1.5rem;
   vertical-align: middle;
 }
+@media (prefers-color-scheme: light) {
+  :root {
+    --primaryColor: whitesmoke;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primaryColor: #353f3f;
+  }
+}
