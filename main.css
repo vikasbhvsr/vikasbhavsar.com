@@ -54,4 +54,5 @@ main a:hover {
 .icon-md {
   height: 1.5rem;
   width: 1.5rem;
+  vertical-align: middle;
 }
