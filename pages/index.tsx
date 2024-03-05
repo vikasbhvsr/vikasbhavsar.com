@@ -36,7 +36,7 @@ export default function Home() {
       <main className="max-w-3xl mx-auto divide-y">
         <section className='py-6'>
           <h2 className='text-yellow-300 text-2xl font-bold mb-5'>About Me</h2>
-          <p>This is a small manifest of my professional career. I don't really know how to sell myself and my skills. Take this as grain of salt. There's more to me than what's presented on this page.</p>
+          <p>This is a small manifest of my professional career. I don\'t really know how to sell myself and my skills. Take this as grain of salt. There\'s more to me than what\'s presented on this page.</p>
         </section>
         <section className='py-6'>
           <h2 className='text-yellow-300 text-2xl font-bold mb-5'>Skills</h2>
