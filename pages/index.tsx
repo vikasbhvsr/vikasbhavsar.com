@@ -1,5 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import { GoogleTagManager } from '@next/third-parties/google'
+
 
 export default function Home() {
   return (
@@ -135,6 +137,7 @@ export default function Home() {
           </div>
         </section>
       </main>
+      <GoogleTagManager gtmId="GTM-W3NQK88B" />
     </>
   )
 }
