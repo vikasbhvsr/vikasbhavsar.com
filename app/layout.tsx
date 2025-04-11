@@ -10,13 +10,15 @@ export const metadata: Metadata = {
     description: 'Portfolio of Vikas Bhavsar, a Web Developer',
 }
 
+const inter = Inter({ subsets: ['latin'] });
+
 export default function Layout({
     children,
 }: {
     children: React.ReactNode
 }) {
     return (
-        <html lang="en">
+        <html lang="en" className={inter.className}>
             <body className='antialiased text-slate-400 bg-slate-900 p-4'>
                 <Header />
                 <main className='max-w-3xl mx-auto py-6'>{children}</main>
